@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dolce Vita - Премиальный Консьерж-Сервис</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        header {
+            background-image: url('https://example.com/luxury-background.jpg'); /* заменить на реальное изображение */
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            color: #fff;
+            padding: 100px 20px;
+        }
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2em;
+            margin: 20px 0 40px;
+        }
+        header a {
+            text-decoration: none;
+            background-color: #000;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .service {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .service h3 {
+            margin: 0 0 10px;
+        }
+        .reviews {
+            background: #f1f1f1;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .review {
+            margin-bottom: 20px;
+        }
+        .review:last-child {
+            margin-bottom: 0;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dolce Vita</h1>
+        <p>Ваш проводник в мир премиальных услуг. Живите красиво и наслаждайтесь жизнью без ограничений.</p>
+        <a href="#contact">Свяжитесь с нами</a>
+    </header>
+
+    <section id="about">
+        <h2>О нас</h2>
+        <p>Dolce Vita — это искусство жить красиво. Мы предлагаем комплексные премиальные услуги, чтобы сделать вашу жизнь проще, ярче и комфортнее. От индивидуального подхода до полного сопровождения — мы всегда на вашей стороне.</p>
+    </section>
+
+    <section id="services">
+        <h2>Наши услуги</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Аренда авто</h3>
+                <p>Люксовые автомобили для любых целей.</p>
+            </div>
+            <div class="service">
+                <h3>Аренда яхт</h3>
+                <p>Яхты класса люкс в любой точке мира.</p>
+            </div>
+            <div class="service">
+                <h3>Бронирование отелей</h3>
+                <p>Эксклюзивные номера и виллы.</p>
+            </div>
+            <div class="service">
+                <h3>Бронирование столов</h3>
+                <p>Доступ к лучшим клубам и ресторанам.</p>
+            </div>
+            <div class="service">
+                <h3>Билеты на ивенты</h3>
+                <p>Доступ к эксклюзивным мероприятиям.</p>
+            </div>
+            <div class="service">
+                <h3>Экскурсии</h3>
+                <p>Индивидуальные туры и маршруты.</p>
+            </div>
+            <div class="service">
+                <h3>Частная авиация</h3>
+                <p>Аренда частных самолетов.</p>
+            </div>
+            <div class="service">
+                <h3>Недвижимость</h3>
+                <p>Элитное жилье в аренду и покупку.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews">
+        <h2>Отзывы наших клиентов</h2>
+        <div class="reviews">
+            <div class="review">
+                <p><strong>Мария, Дубай:</strong> "Сотрудничество с Dolce Vita превзошло все ожидания. Настоящие профессионалы!"</p>
+            </div>
+            <div class="review">
+                <p><strong>Алексей, Лондон:</strong> "Мне срочно понадобился частный самолет, и Dolce Vita все организовали за считанные часы. Это невероятно!"</p>
+            </div>
+            <div class="review">
+                <p><strong>Елена, Париж:</strong> "Организация была на высшем уровне, от бронирования виллы до экскурсий. Спасибо за незабываемый отдых!"</p>
+            </div>
+            <div class="review">
+                <p><strong>Анна, Нью-Йорк:</strong> "Dolce Vita — это роскошь, доступная 24/7. Невероятный опыт!"</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Свяжитесь с нами</h2>
+        <form action="#" method="post">
+            <label for="name">Ваше имя:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="phone">Телефон:</label><br>
+            <input type="tel" id="phone" name="phone" required><br><br>
+
+            <label for="message">Сообщение:</label><br>
+            <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+            <button type="submit">Отправить</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Dolce Vita. Все права защищены.</p>
+    </footer>
+</body>
+</html>
+
